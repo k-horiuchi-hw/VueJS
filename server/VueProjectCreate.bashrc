@@ -1,0 +1,1 @@
+vue init webpack && sed -i -e 's/localhost/0.0.0.0/g' ./config/index.js && npm update
