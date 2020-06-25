@@ -5,7 +5,7 @@ services:
     container_name: web
     build: ./docker
     ports:
-      - 8080:8080
+      - 4040:4040
     privileged: true
     volumes:
       - ./server:/app

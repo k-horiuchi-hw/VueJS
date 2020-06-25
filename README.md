@@ -1,16 +1,14 @@
-# Vue.jsの環境構築用ファイル
-
-- Dockerがインストール済みのMac向け
+### Vue.jsの環境構築用ファイル
 
 #### 新しくプロジェクトを作る場合
 
-1. ホストでDockerInit.bashrcを実行する
-2. ゲストでVueProjectCreate.bashrcを実行する（※プロジェクト設定ではnpmではなくyarnを指定すること）
-3. ゲストでVueExecute.bashrcを実行する
+1. ホストで`sh DockerInit.bashrc`
+2. ゲストで`sh VueProjectCreate.bashrc`（※プロジェクト設定ではnpmではなくyarnを指定すること）
+3. ゲストで`yarn dev`
 
 
 #### 既存のプロジェクトを使う場合
 
-1. serverにvueのプロジェクトファイルの中身を入れる（※ポートが8080で公開されるプロジェクトであること）
-2. ホストでDockerInit.bashrcを実行する
-3. ゲストでVueExecute.bashrcを実行する
+1. ホストで`sh DockerInit.bashrc`
+2. serverにvueのプロジェクトファイルの中身を入れる（※ポートが4040で公開されるプロジェクトであること）
+3. ゲストで`yarn dev`
